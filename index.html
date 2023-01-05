@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Ep 10 - UI MONK's GSAP Tutorial </title>
+    <!-- ################### Fonts  ######################## -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <!-- ################### Icons & Slider  ######################## -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <!-- ################### External Stylesheet  ######################## -->  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="loader1"></div>
+<div class="loader2"></div>
+<div class="loader3"></div>
+    <div class="bg">
+        <img src="img/bg.png" alt="">
+        <div class="social">
+            <a href=""> <i class="fa fa-facebook"></i></a>
+            <a href=""> <i class="fa fa-instagram"></i></a>
+            <a href=""> <i class="fa fa-twitter"></i></a>
+            <a href=""> <i class="fa fa-whatsapp"></i></a> 
+        </div>
+    </div>
+    <div class="container">
+      <header>
+          <div class="logo">UI Monk</div>
+          <ul>
+              <li><a class='active' href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Menus</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="search">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-bars"></i>
+          </div>
+      </header>
+      
+    <div class="content-container">
+        <div class="content">
+            <h3>Are you Hundry?</h3>
+            <h1>Dont Wait!</h1>
+            <p>Lets Start order food online</p>
+            <button>Order now</button>
+        </div>
+        <div class="dish">
+            <img src="img/plate.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="bottom-section">
+        <div class="slider">
+            <div class="prev">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+            <div class="swiper-container">
+               
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                      <div class="card">
+                          <div class="img-container">
+                            <img src="img/plate1.jpg" alt="">
+                          </div>
+                        
+                        <div class="content">
+                            <h6>Dish Name</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                        <div class="img-container">
+                            <img src="img/plate2.jpg" alt="">
+                          </div>
+                        <div class="content">
+                            <h6>Dish Name</h6>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide"><div class="card">
+                    <div class="img-container">
+                        <img src="img/plate1.jpg" alt="">
+                      </div>
+                    <div class="content">
+                        <h6>Dish Name</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                  </div></div>
+                  
+                </div>
+           
+            
+            
+              
+           
+              </div>
+              <div class="next">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+              
+        </div>
+        
+        <div class="bottom-content">
+            <div class="content">
+                <h1>01</h1>
+                <div class="desc">
+                    <h3>50% Offer </h3>
+                    <p>On sat</p>
+                </div>
+            </div>
+            <div class="content">
+                <h1>02</h1>
+                <div class="desc">
+                    <h3>20%</h3>
+                    <p>On Week Days</p>
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+   
+
+
+    </div>
+    
+
+    
+
+
+
+
+
+
+    
+
+<!-- ################### Slider & GSAP  ######################## -->  
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script> 
+    <script src="gsap.min.js" ></script>
+<!-- ################### External Script  ######################## -->  
+    <script src="script.js"></script>
+</body>
+</html>

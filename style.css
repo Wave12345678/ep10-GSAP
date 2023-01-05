@@ -1,0 +1,175 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+ 
+body{
+    overflow: hidden;
+    background:#333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.bg{
+    width: 100%;
+    height: 100%; 
+    position: fixed;
+    z-index: -1;
+}
+
+.bg img{
+    position: fixed;
+    right: 0;
+    top: 0;
+    object-fit: contain;
+    height: 100%;
+    z-index: -1;
+}
+ 
+
+.container{
+    height: 90vh;
+    width: 90%; 
+    color: #ff7902;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{ color: white;font-size: 30px;width: 20%;}
+header ul{color: white;width: 60%; display: flex;align-items: flex-start;list-style-type: none;}
+header ul li {margin-left: 30px;color:white}
+header ul li a{ color: white;text-decoration: none;font-size: 15px;}
+header ul li a.active{ color: #ff7902;;position: relative;}
+header ul li a.active::after{content:'';position: absolute;bottom:-10px;background: #ff7902;width: 20px;height:2px;left:50%;transform:translateX(-50%)}
+header .search{color: black;font-size: 30px;width: 20%;display: flex;align-items: flex-end;}
+header .search i{margin-left: 40px;}
+
+.content-container{display: flex;justify-content: space-between; align-items: center;margin-top: 80px;}
+.content-container .content{align-self: flex-start;}
+.content-container .content h3{color: white;font-size: 30px;}
+.content-container .content h1{color: white;font-size: 130px;margin-top: -30px;}
+.content-container .content p{font-size: 20px;margin-top: -10px;}
+.content-container .content button{padding: 5px 20px;background: transparent;border: 2px solid white;color:white;margin-top: 15px;font-size: 20px;border-radius: 15px;cursor: pointer;}
+.content-container .content button:hover{
+    border: 2px solid #ff7902;color:#ff7902;
+}
+.content-container .dish{position: absolute;right: 0;top: 20%;width: 50%;height: 60vh;z-index: 1;}
+.content-container .dish img{object-fit: contain;width: 100%;height: 100%;}
+
+
+
+.social{
+    position: fixed;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    background: white;
+    color:#333;
+    width: 40px;
+    height: 30vh;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    z-index: 99;
+}
+.social a:hover{
+    background: #ff7902;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+}
+.social a{
+    color:#333;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    text-decoration: none;
+
+}
+
+.slider{
+    margin-top: 20px;
+    width: 60%;
+height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .card{display: flex; align-items: center;justify-content: center;height: 100%;}
+.slider .card .img-container{width: 50%;height: 80%;}
+.slider .card img{width: 100%;height: 100%;object-fit: contain;}
+.slider .card .content h6{font-size: 25px;color:white;font-weight: normal;}
+.slider .card .content p{font-size: 13px;}
+ 
+
+.swiper-container{display: flex;width: 80%;height: 100%;}
+
+.slider .prev{cursor:pointer;width: 10%;display: flex;align-items: center;justify-content: center;background: #ff7902;color:white;height: 80%;font-size: 30px;}
+.slider .next{cursor:pointer;width: 10%;display: flex;align-items: center;justify-content: center;background: #ff7902;color:white;height: 80%;font-size: 30px;}
+
+
+
+
+.bottom-section{
+    display: flex;
+    width: 100%;
+}
+.bottom-content{
+    width: 100%;
+    color: black;
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+padding-left: 20px;
+}
+
+.bottom-content .content{
+    width: 50%;
+    display: flex;
+    
+justify-content: flex-end;
+align-items: center;
+
+}
+
+.bottom-content .content h1
+{
+    font-size: 60px;
+}
+
+.bottom-content .content .desc{
+    margin-left: 5px;
+}
+
+
+.loader1{
+height: 150px;
+width: 150px;
+background: #ff7902;
+position: absolute;
+top:50%;
+left: 50%;
+border-radius: 50%;
+transform:translate(-50%,-50%) scale(15);
+z-index:99999;
+}
